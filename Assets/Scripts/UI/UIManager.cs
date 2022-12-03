@@ -10,12 +10,11 @@ public class UIManager : MonoBehaviour
     #region StickerAmountVariables
         [Header ("Sticker amount")]
         //armazena o valor da quantidade de figurinhas que será mostrado na tela
-        [SerializeField] private long testStickerAmountValue = 20;
         [SerializeField] private TextMeshProUGUI _stickerAmountText;
     #endregion
 
     private void Awake() {
-                if (instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -36,7 +35,6 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateStickerAmount(testStickerAmountValue);
     }
 
     public void UpdateStickerAmount(long StickerAmount){
