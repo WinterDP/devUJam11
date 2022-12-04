@@ -44,4 +44,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c55a917a987567b44b531d472a1afc89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - audioSource: {fileID: 0}
+    name: Main_Music
+    clip: {fileID: 8300000, guid: 37b7b1ea4c55e69439e61d4a12fdc9cc, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+  - audioSource: {fileID: 0}
+    name: Bafo_Clap
+    clip: {fileID: 8300000, guid: c666540985590d74d9dd4031d6f8e45d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: Bafo_FlipCard
+    clip: {fileID: 8300000, guid: 718eff09ae7771e498620129e8e30a53, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: Roda_Upgrade
+    clip: {fileID: 8300000, guid: 97510e1eee15d964b9c449e66b211623, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: Generator_Withdraw
+    clip: {fileID: 8300000, guid: 2afaf8ac4adb69d419e9d403b90aea65, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: Culto_Upgrade
+    clip: {fileID: 8300000, guid: 57a0908f9470786468b4b4501a5b7baf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0

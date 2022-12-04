@@ -55,20 +55,13 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        /*
+        AudioManager.instance.PlaySound("Main_Music");
+        
         AudioListener.volume = mainVolume;
         if (slider != null){
             slider.value = mainVolume;
             slider.onValueChanged.AddListener(delegate { SetMasterVolume(); }); 
         }
-            
-
-        
-        if (!(AudioManager.instance.IsPlaying("Menu")) && SceneManager.GetActiveScene().name == "MainMenu")
-        {
-            AudioManager.instance.PlaySound("Menu");
-        }
-        */
 
         Cursor.visible = true;
         
