@@ -48,7 +48,7 @@ public class MainClicker : MonoBehaviour
 
 
         public void LevelUp(){
-            if((PlayerData.instance.GetStickersAmount() >= _stickersNeededToLVLUp) && (_upgradeLVL <= _maxLVL) ){
+            if((PlayerData.instance.GetStickersAmount() >= _stickersNeededToLVLUp) && (_upgradeLVL < _maxLVL) ){
                 PlayerData.instance.AddStickersToAmount(-(this._stickersNeededToLVLUp));
                 this._upgradeLVL ++;
                 this._clickerStep = _upgradeData.table[_upgradeLVL].Step;

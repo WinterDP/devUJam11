@@ -80,7 +80,7 @@ public class Generator : MonoBehaviour
     #region Load Sticker methods
         //Retira as figurinhas armazenadas e coloca na quantidade total
         public void LoadStickers(){
-            if(_upgradeLVL>0){
+            if(_upgradeLVL>0 && !(PlayerData.instance.IsPaused)){
                 if(this._currentStickers + this._generatorStep >= this._maxStickersAmount){
                     this._currentStickers = this._maxStickersAmount;
                     UIManager.instance.UpdateGeneratorWithdrawSlider(((float)_currentStickers)/((float)_maxStickersAmount), _generatorOrder);
