@@ -4543,7 +4543,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WORD CUP STICKER MANIA
+  m_text: WORLD CUP STICKER MANIA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c44a2539aed8a5147a84e97e4e1887be, type: 2}
   m_sharedMaterial: {fileID: 839654701273648780, guid: c44a2539aed8a5147a84e97e4e1887be, type: 2}
@@ -4576,7 +4576,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 17
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
