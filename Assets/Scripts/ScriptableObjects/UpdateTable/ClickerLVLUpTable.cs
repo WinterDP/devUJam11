@@ -7,9 +7,10 @@ using System;
 public class ClickerLVLUpTable : ScriptableObject
 {
     
-    private int _maxLVL = 10;
-    private int _standartStep = 10;
-    private int _standartPrice = 110;
+    private int _maxLVL = 100;
+    private int _standartStep = 1;
+    private long _standartPrice = 100;
+    private int _packMultiplyer = 1;
 
 
     [Header ("Lista de crescimento do upgrade")]
@@ -23,9 +24,9 @@ public class ClickerLVLUpTable : ScriptableObject
                 for (int i = 0; i <= _maxLVL; i++)
                 {
                     if(i==0){
-                        table.Add(new ClickerLVLUp(i, 1, _standartPrice));
+                        table.Add(new ClickerLVLUp(i, _standartStep, _packMultiplyer*_standartPrice));
                     }else{
-                        table.Add(new ClickerLVLUp(i, (long) (_standartStep * Math.Exp( (double)( 0.1385 * (double)i ))), (long) (_standartPrice * Math.Exp((double)( 0.1385 * (double)i )))));
+                        table.Add(new ClickerLVLUp(i, (long) (_standartStep * Math.Exp( (double)( 0.1385 * (double)i ))), (long) (_packMultiplyer*_standartPrice* Math.Exp((double)( 0.1385 * (double)i )))));
                     }
                 }
             }

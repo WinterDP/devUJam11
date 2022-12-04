@@ -11,7 +11,7 @@ public class Generator : MonoBehaviour
 
     [Header(" Variaveis do Manager do gerador ")]
     [SerializeField] private bool _hasManager;
-    [SerializeField] private int _managerCost;
+    [SerializeField] private long _managerCost;
 
     [Header(" Variáveis para retirada das figurinhas ")]
     [SerializeField] private int _stickerStepMultiplier = 10;
@@ -40,6 +40,7 @@ public class Generator : MonoBehaviour
         this._upgradeLVL = _upgradeData.table[0].Level;
         this._generatorStep = _upgradeData.table[0].Step;
         this._stickersNeededToLVLUp = _upgradeData.table[0].StickersNeededToLVLUP;
+        this._managerCost = _upgradeData.table[4].StickersNeededToLVLUP;
     }
 
 

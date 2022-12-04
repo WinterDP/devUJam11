@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a0f7f36310c45428e9af8886f855cc, type: 3}
+  m_Name: UpgradeGenerator7LVLUpTable
+  m_EditorClassIdentifier: 
+  table:
+  - Level: 0
+    Step: 1000000
+    StickersNeededToLVLUP: 25600000000
+  - Level: 1
+    Step: 1148549
+    StickersNeededToLVLUP: 29402871848
+  - Level: 2
+    Step: 1319166
+    StickersNeededToLVLUP: 33770659098
+  - Level: 3
+    Step: 1515128
+    StickersNeededToLVLUP: 38787279753
+  - Level: 4
+    Step: 1740199
+    StickersNeededToLVLUP: 44549117810
+  - Level: 5
+    Step: 1998706
+    StickersNeededToLVLUP: 51166875075
+  - Level: 6
+    Step: 2295613
+    StickersNeededToLVLUP: 58767698074
+  - Level: 7
+    Step: 2636625
+    StickersNeededToLVLUP: 67497620910
+  - Level: 8
+    Step: 3028295
+    StickersNeededToLVLUP: 77524371003
+  - Level: 9
+    Step: 3478148
+    StickersNeededToLVLUP: 89040591629
+  - Level: 10
+    Step: 3994825
+    StickersNeededToLVLUP: 102267543163

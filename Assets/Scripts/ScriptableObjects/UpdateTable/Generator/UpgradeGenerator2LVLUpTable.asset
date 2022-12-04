@@ -14,35 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   table:
   - Level: 0
-    Step: 1
-    StickersNeededToLVLUP: 110
+    Step: 10
+    StickersNeededToLVLUP: 4400
   - Level: 1
     Step: 11
-    StickersNeededToLVLUP: 126
+    StickersNeededToLVLUP: 5053
   - Level: 2
     Step: 13
-    StickersNeededToLVLUP: 145
+    StickersNeededToLVLUP: 5804
   - Level: 3
     Step: 15
-    StickersNeededToLVLUP: 166
+    StickersNeededToLVLUP: 6666
   - Level: 4
     Step: 17
-    StickersNeededToLVLUP: 191
+    StickersNeededToLVLUP: 7656
   - Level: 5
     Step: 19
-    StickersNeededToLVLUP: 219
+    StickersNeededToLVLUP: 8794
   - Level: 6
     Step: 22
-    StickersNeededToLVLUP: 252
+    StickersNeededToLVLUP: 10100
   - Level: 7
     Step: 26
-    StickersNeededToLVLUP: 290
+    StickersNeededToLVLUP: 11601
   - Level: 8
     Step: 30
-    StickersNeededToLVLUP: 333
+    StickersNeededToLVLUP: 13324
   - Level: 9
     Step: 34
-    StickersNeededToLVLUP: 382
+    StickersNeededToLVLUP: 15303
   - Level: 10
     Step: 39
-    StickersNeededToLVLUP: 439
+    StickersNeededToLVLUP: 17577
