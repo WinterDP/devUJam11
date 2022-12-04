@@ -97,6 +97,8 @@ public class Generator : MonoBehaviour
         public void CheckIfCanLVLUp(){
             if((PlayerData.instance.GetStickersAmount() >= this._stickersNeededToLVLUp) && (this._upgradeLVL < this._maxLVL)){
                 UIManager.instance.CanUpgradeGenerator(true, _generatorOrder);
+            }else{
+                UIManager.instance.CanUpgradeGenerator(false, _generatorOrder);
             }
         }
 
@@ -115,8 +117,10 @@ public class Generator : MonoBehaviour
     #region Manager methods
 
         public void CheckIfCanBuyManager(){
-            if(((PlayerData.instance.GetStickersAmount() >= this._managerCost) && !_hasManager)){
+            if(((PlayerData.instance.GetStickersAmount() >= this._managerCost) && !_hasManager && this._upgradeLVL>0)){
                 UIManager.instance.CanBuyManagerGenerator(true, _generatorOrder);
+            }else{
+                UIManager.instance.CanBuyManagerGenerator(false, _generatorOrder);
             }
         }
 

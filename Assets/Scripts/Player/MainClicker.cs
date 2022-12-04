@@ -36,11 +36,13 @@ public class MainClicker : MonoBehaviour
         }
     #endregion
 
-    #region upgrade 1 methods
+    #region upgrade methods
 
         public void CheckIfCanLVLUp(){
             if(PlayerData.instance.GetStickersAmount() >= _stickersNeededToLVLUp){
                 UIManager.instance.CanLVLUp(true);
+            }else{
+                UIManager.instance.CanLVLUp(false);
             }
         }
 
