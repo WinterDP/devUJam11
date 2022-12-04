@@ -10,12 +10,13 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
-    #region StickerAmountVariables
+    #region Sticker Amount Variables
         [Header ("Sticker amount")]
         //armazena o valor da quantidade de figurinhas que será mostrado na tela
         [SerializeField] private TextMeshProUGUI _stickerAmountText;
     #endregion
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     #region Clicker Upgrade Variables
@@ -31,6 +32,15 @@ public class UIManager : MonoBehaviour
     #endregion
 
 >>>>>>> Stashed changes
+=======
+    #region Clicker Upgrade Variables
+            [Header ("Variaveis relacionadas a UI do upgrade do clicker")]
+            //armazena o valor da quantidade de figurinhas que será mostrado na tela
+            [SerializeField] private TextMeshProUGUI _upgradeLVLText;
+            [SerializeField] private GameObject _upgradeButton;
+    #endregion
+
+>>>>>>> a60d170c28f718839ba5300102fdbc183ee1e339
     private void Awake() {
         if (instance == null)
         {
@@ -44,17 +54,25 @@ public class UIManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
+    #region Sticker Amount Methods
+        public void UpdateStickerAmount(long StickerAmount){
+            string aux =  StickerAmount.ToString();
+            this._stickerAmountText.text = aux;
+        }
+    #endregion
+    
+    #region Clicker Upgrade Methods
+        public void CanLVLUp(bool state){
+            _upgradeButton.SetActive(state);
+        }
 
+        public void UpdateLVLText(int newLvl){
+            this._upgradeLVLText. text = "NV:" + newLvl;
+        }
+    #endregion
+
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     public void UpdateStickerAmount(long StickerAmount){
         string aux =  StickerAmount.ToString();
@@ -90,4 +108,6 @@ public class UIManager : MonoBehaviour
         #endregion  
     #endregion
 >>>>>>> Stashed changes
+=======
+>>>>>>> a60d170c28f718839ba5300102fdbc183ee1e339
 }
