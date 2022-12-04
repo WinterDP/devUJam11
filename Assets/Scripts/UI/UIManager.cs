@@ -16,9 +16,7 @@ public class UIManager : MonoBehaviour
         [SerializeField] private TextMeshProUGUI _stickerAmountText;
     #endregion
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
+
     #region Clicker Upgrade Variables
         [Header ("Variaveis relacionadas a UI do upgrade do clicker")]
         //armazena o valor da quantidade de figurinhas que será mostrado na tela
@@ -31,16 +29,7 @@ public class UIManager : MonoBehaviour
         [SerializeField] private List<GeneratorUISample> _generatorList = new List<GeneratorUISample>();
     #endregion
 
->>>>>>> Stashed changes
-=======
-    #region Clicker Upgrade Variables
-            [Header ("Variaveis relacionadas a UI do upgrade do clicker")]
-            //armazena o valor da quantidade de figurinhas que será mostrado na tela
-            [SerializeField] private TextMeshProUGUI _upgradeLVLText;
-            [SerializeField] private GameObject _upgradeButton;
-    #endregion
 
->>>>>>> a60d170c28f718839ba5300102fdbc183ee1e339
     private void Awake() {
         if (instance == null)
         {
@@ -72,13 +61,6 @@ public class UIManager : MonoBehaviour
         }
     #endregion
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    public void UpdateStickerAmount(long StickerAmount){
-        string aux =  StickerAmount.ToString();
-        this._stickerAmountText.text = aux;
-    }
-=======
     #region Generator Methods
         #region Generator Whithdraw Methods
             public void CanWithdrawGenerator(bool state, int index){
@@ -107,7 +89,4 @@ public class UIManager : MonoBehaviour
 
         #endregion  
     #endregion
->>>>>>> Stashed changes
-=======
->>>>>>> a60d170c28f718839ba5300102fdbc183ee1e339
 }

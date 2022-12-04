@@ -19,11 +19,9 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Debug.Log("Load game");
         AudioManager.instance.StopSound("Menu");
-<<<<<<< Updated upstream
-        
-=======
+
         SceneManager.LoadScene("SampleGame");
->>>>>>> Stashed changes
+
     }
 
     public void SettingsMenu()
