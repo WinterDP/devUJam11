@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/ScriptableObjects/UpdateTable/Generator/UpgradeGenerator2LVLUpTable.asset.meta
+guid: 73a67a1bec1cff445b7958148306a3ce
+========
+guid: a4c518fb58f3c8c4f96efd01060e526b
+>>>>>>>> a60d170c28f718839ba5300102fdbc183ee1e339:Assets/Scripts/ScriptableObjects/MainClicker/UpgradeClickerLVLUpTable.asset.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

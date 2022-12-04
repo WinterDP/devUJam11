@@ -8,6 +8,13 @@ public class PlayerData : MonoBehaviour
         private long _stickerAmount;
     #endregion
 
+    #region Game manager variables
+        [SerializeField] private GameObject _pauseMenu;
+        [SerializeField] private GameObject _game;
+        public bool IsPaused = false;
+    #endregion
+
+
     public static PlayerData instance;
 
     private void Awake() {
@@ -33,7 +40,8 @@ public class PlayerData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown("escape"))
+            Pause();
     }
 
     #region StickersAmountMethods
@@ -48,6 +56,21 @@ public class PlayerData : MonoBehaviour
         public void AddStickersToAmount(long NewStickers){
             this._stickerAmount += NewStickers;
             UIManager.instance.UpdateStickerAmount(this._stickerAmount);
+        }
+
+    #endregion
+
+    #region game manager methods
+
+        public void Pause(){
+            if(!IsPaused){
+                _pauseMenu.SetActive(true);
+                _game.SetActive(false);
+            }else{
+                _pauseMenu.SetActive(false);
+                _game.SetActive(true);
+            }
+            IsPaused = !IsPaused;
         }
 
     #endregion

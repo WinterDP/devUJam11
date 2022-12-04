@@ -7,15 +7,17 @@ public class ClickerLVLUp
 { 
 
 
-    public ClickerLVLUp(int Level, int ClickerStep , long StickersNeededToLVLUP)
+    public ClickerLVLUp(int Level, long Step , long StickersNeededToLVLUP)
     {
         this.Level = Level;
-        this.ClickerStep = ClickerStep;
+        this.Step = Step;
         this.StickersNeededToLVLUP = StickersNeededToLVLUP;
     }
 
-    [Header ("Variáveis referentes ao upgrade 1")]
+
+    [Header ("Variáveis referentes ao upgrade")]
     public int Level;
-    public int ClickerStep;
+    public long Step;
     public long StickersNeededToLVLUP;
+
 }

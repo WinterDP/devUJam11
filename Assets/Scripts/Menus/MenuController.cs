@@ -16,10 +16,12 @@ public class MenuController : MonoBehaviour
 	// Carrega a cena de id 1
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log("Load game");
-        AudioManager.instance.StopSound("Menu");
         
+        AudioManager.instance.StopSound("Menu");
+        if(PlayerData.instance.IsPaused)
+            PlayerData.instance.IsPaused = !PlayerData.instance.IsPaused;
+        
+
     }
 
     public void SettingsMenu()
@@ -54,7 +56,7 @@ public class MenuController : MonoBehaviour
     private void Start()
     {
         /*
-        //AudioListener.volume = mainVolume;
+        AudioListener.volume = mainVolume;
         if (slider != null){
             slider.value = mainVolume;
             slider.onValueChanged.AddListener(delegate { SetMasterVolume(); }); 
@@ -67,6 +69,7 @@ public class MenuController : MonoBehaviour
             AudioManager.instance.PlaySound("Menu");
         }
         */
+
         Cursor.visible = true;
         
     }
