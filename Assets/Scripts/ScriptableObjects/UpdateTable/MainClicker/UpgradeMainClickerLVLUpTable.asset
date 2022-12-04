@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a0f7f36310c45428e9af8886f855cc, type: 3}
+  m_Name: UpgradeMainClickerLVLUpTable
+  m_EditorClassIdentifier: 
+  table:
+  - Level: 0
+    Step: 1
+    StickersNeededToLVLUP: 100
+  - Level: 1
+    Step: 1
+    StickersNeededToLVLUP: 114
+  - Level: 2
+    Step: 1
+    StickersNeededToLVLUP: 131
+  - Level: 3
+    Step: 1
+    StickersNeededToLVLUP: 151
+  - Level: 4
+    Step: 1
+    StickersNeededToLVLUP: 174
+  - Level: 5
+    Step: 1
+    StickersNeededToLVLUP: 199
+  - Level: 6
+    Step: 2
+    StickersNeededToLVLUP: 229
+  - Level: 7
+    Step: 2
+    StickersNeededToLVLUP: 263
+  - Level: 8
+    Step: 3
+    StickersNeededToLVLUP: 302
+  - Level: 9
+    Step: 3
+    StickersNeededToLVLUP: 347
+  - Level: 10
+    Step: 3
+    StickersNeededToLVLUP: 399
+  - Level: 11
+    Step: 4
+    StickersNeededToLVLUP: 458
+  - Level: 12
+    Step: 5
+    StickersNeededToLVLUP: 526
+  - Level: 13
+    Step: 6
+    StickersNeededToLVLUP: 605
+  - Level: 14
+    Step: 6
+    StickersNeededToLVLUP: 695
+  - Level: 15
+    Step: 7
+    StickersNeededToLVLUP: 798
+  - Level: 16
+    Step: 9
+    StickersNeededToLVLUP: 917
+  - Level: 17
+    Step: 10
+    StickersNeededToLVLUP: 1053
+  - Level: 18
+    Step: 12
+    StickersNeededToLVLUP: 1209
+  - Level: 19
+    Step: 13
+    StickersNeededToLVLUP: 1389
+  - Level: 20
+    Step: 15
+    StickersNeededToLVLUP: 1595
+  - Level: 21
+    Step: 18
+    StickersNeededToLVLUP: 1832
+  - Level: 22
+    Step: 21
+    StickersNeededToLVLUP: 2105
+  - Level: 23
+    Step: 24
+    StickersNeededToLVLUP: 2417
+  - Level: 24
+    Step: 27
+    StickersNeededToLVLUP: 2777
+  - Level: 25
+    Step: 31
+    StickersNeededToLVLUP: 3189
+  - Level: 26
+    Step: 36
+    StickersNeededToLVLUP: 3663
+  - Level: 27
+    Step: 42
+    StickersNeededToLVLUP: 4207
+  - Level: 28
+    Step: 48
+    StickersNeededToLVLUP: 4832
+  - Level: 29
+    Step: 55
+    StickersNeededToLVLUP: 5550
+  - Level: 30
+    Step: 63
+    StickersNeededToLVLUP: 6375
+  - Level: 31
+    Step: 73
+    StickersNeededToLVLUP: 7322
+  - Level: 32
+    Step: 84
+    StickersNeededToLVLUP: 8409
+  - Level: 33
+    Step: 96
+    StickersNeededToLVLUP: 9659
+  - Level: 34
+    Step: 110
+    StickersNeededToLVLUP: 11094
+  - Level: 35
+    Step: 127
+    StickersNeededToLVLUP: 12742
+  - Level: 36
+    Step: 146
+    StickersNeededToLVLUP: 14634
+  - Level: 37
+    Step: 168
+    StickersNeededToLVLUP: 16809
+  - Level: 38
+    Step: 193
+    StickersNeededToLVLUP: 19305
+  - Level: 39
+    Step: 221
+    StickersNeededToLVLUP: 22173
+  - Level: 40
+    Step: 254
+    StickersNeededToLVLUP: 25467
+  - Level: 41
+    Step: 292
+    StickersNeededToLVLUP: 29251
+  - Level: 42
+    Step: 335
+    StickersNeededToLVLUP: 33596
+  - Level: 43
+    Step: 385
+    StickersNeededToLVLUP: 38586
+  - Level: 44
+    Step: 443
+    StickersNeededToLVLUP: 44319
+  - Level: 45
+    Step: 509
+    StickersNeededToLVLUP: 50902
+  - Level: 46
+    Step: 584
+    StickersNeededToLVLUP: 58464
+  - Level: 47
+    Step: 671
+    StickersNeededToLVLUP: 67149
+  - Level: 48
+    Step: 771
+    StickersNeededToLVLUP: 77124
+  - Level: 49
+    Step: 885
+    StickersNeededToLVLUP: 88580
+  - Level: 50
+    Step: 1017
+    StickersNeededToLVLUP: 101739
