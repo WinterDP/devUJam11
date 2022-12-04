@@ -14,9 +14,13 @@ public class Generator : MonoBehaviour
     [SerializeField] private int _managerCost;
 
     [Header(" Variáveis para retirada das figurinhas ")]
-    [SerializeField] private int _cooldownWithdraw = 10;
+    [SerializeField] private int _stickerStepMultiplier = 10;
     private long _currentStickers;
     private long _maxStickersAmount;
+
+    [Header(" Variáveis para cooldown de carregamento das figurinhas ")]
+    [SerializeField] private float _cooldownTime = 5.0f;
+    private float _cooldownElapsed = 0f;
 
     #endregion
 
@@ -42,7 +46,7 @@ public class Generator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this._maxStickersAmount = this._cooldownWithdraw*this._generatorStep;
+        this._maxStickersAmount = this._stickerStepMultiplier*this._generatorStep;
     }
 
     // Update is called once per frame
@@ -52,6 +56,11 @@ public class Generator : MonoBehaviour
         CheckIfCanWithdraw();
         CheckIfCanLVLUp();
         CheckIfCanBuyManager();
+
+        _cooldownElapsed += Time.fixedDeltaTime;
+        if(_cooldownElapsed >= _cooldownTime){
+            LoadStickers();
+            _cooldownElapsed = 0f;            }
     }
 
     #region Withdraw Stickers methods
