@@ -40,8 +40,8 @@ public class PlayerData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("escape"))
-            Pause();
+        //if(Input.GetKeyDown("escape"))
+            //Pause();
     }
 
     #region StickersAmountMethods
