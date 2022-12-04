@@ -16,9 +16,10 @@ public class MenuController : MonoBehaviour
 	// Carrega a cena de id 1
     public void PlayGame()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Debug.Log("Load game");
         AudioManager.instance.StopSound("Menu");
-        SceneManager.LoadScene("House");
+        
     }
 
     public void SettingsMenu()
