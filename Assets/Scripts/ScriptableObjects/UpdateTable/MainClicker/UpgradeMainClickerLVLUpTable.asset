@@ -166,3 +166,153 @@ MonoBehaviour:
   - Level: 50
     Step: 1017
     StickersNeededToLVLUP: 101739
+  - Level: 51
+    Step: 1168
+    StickersNeededToLVLUP: 116852
+  - Level: 52
+    Step: 1342
+    StickersNeededToLVLUP: 134211
+  - Level: 53
+    Step: 1541
+    StickersNeededToLVLUP: 154148
+  - Level: 54
+    Step: 1770
+    StickersNeededToLVLUP: 177046
+  - Level: 55
+    Step: 2033
+    StickersNeededToLVLUP: 203347
+  - Level: 56
+    Step: 2335
+    StickersNeededToLVLUP: 233554
+  - Level: 57
+    Step: 2682
+    StickersNeededToLVLUP: 268248
+  - Level: 58
+    Step: 3080
+    StickersNeededToLVLUP: 308097
+  - Level: 59
+    Step: 3538
+    StickersNeededToLVLUP: 353864
+  - Level: 60
+    Step: 4064
+    StickersNeededToLVLUP: 406431
+  - Level: 61
+    Step: 4668
+    StickersNeededToLVLUP: 466806
+  - Level: 62
+    Step: 5361
+    StickersNeededToLVLUP: 536150
+  - Level: 63
+    Step: 6157
+    StickersNeededToLVLUP: 615795
+  - Level: 64
+    Step: 7072
+    StickersNeededToLVLUP: 707271
+  - Level: 65
+    Step: 8123
+    StickersNeededToLVLUP: 812336
+  - Level: 66
+    Step: 9330
+    StickersNeededToLVLUP: 933009
+  - Level: 67
+    Step: 10716
+    StickersNeededToLVLUP: 1071607
+  - Level: 68
+    Step: 12307
+    StickersNeededToLVLUP: 1230794
+  - Level: 69
+    Step: 14136
+    StickersNeededToLVLUP: 1413628
+  - Level: 70
+    Step: 16236
+    StickersNeededToLVLUP: 1623622
+  - Level: 71
+    Step: 18648
+    StickersNeededToLVLUP: 1864810
+  - Level: 72
+    Step: 21418
+    StickersNeededToLVLUP: 2141827
+  - Level: 73
+    Step: 24599
+    StickersNeededToLVLUP: 2459995
+  - Level: 74
+    Step: 28254
+    StickersNeededToLVLUP: 2825427
+  - Level: 75
+    Step: 32451
+    StickersNeededToLVLUP: 3245143
+  - Level: 76
+    Step: 37272
+    StickersNeededToLVLUP: 3727208
+  - Level: 77
+    Step: 42808
+    StickersNeededToLVLUP: 4280884
+  - Level: 78
+    Step: 49168
+    StickersNeededToLVLUP: 4916808
+  - Level: 79
+    Step: 56471
+    StickersNeededToLVLUP: 5647198
+  - Level: 80
+    Step: 64860
+    StickersNeededToLVLUP: 6486088
+  - Level: 81
+    Step: 74495
+    StickersNeededToLVLUP: 7449594
+  - Level: 82
+    Step: 85562
+    StickersNeededToLVLUP: 8556229
+  - Level: 83
+    Step: 98272
+    StickersNeededToLVLUP: 9827254
+  - Level: 84
+    Step: 112870
+    StickersNeededToLVLUP: 11287090
+  - Level: 85
+    Step: 129637
+    StickersNeededToLVLUP: 12963784
+  - Level: 86
+    Step: 148895
+    StickersNeededToLVLUP: 14889550
+  - Level: 87
+    Step: 171013
+    StickersNeededToLVLUP: 17101387
+  - Level: 88
+    Step: 196417
+    StickersNeededToLVLUP: 19641793
+  - Level: 89
+    Step: 225595
+    StickersNeededToLVLUP: 22559575
+  - Level: 90
+    Step: 259107
+    StickersNeededToLVLUP: 25910793
+  - Level: 91
+    Step: 297598
+    StickersNeededToLVLUP: 29759833
+  - Level: 92
+    Step: 341806
+    StickersNeededToLVLUP: 34180647
+  - Level: 93
+    Step: 392581
+    StickersNeededToLVLUP: 39258172
+  - Level: 94
+    Step: 450899
+    StickersNeededToLVLUP: 45089961
+  - Level: 95
+    Step: 517880
+    StickersNeededToLVLUP: 51788060
+  - Level: 96
+    Step: 594811
+    StickersNeededToLVLUP: 59481160
+  - Level: 97
+    Step: 683170
+    StickersNeededToLVLUP: 68317067
+  - Level: 98
+    Step: 784655
+    StickersNeededToLVLUP: 78465546
+  - Level: 99
+    Step: 901215
+    StickersNeededToLVLUP: 90121578
+  - Level: 100
+    Step: 1035091
+    StickersNeededToLVLUP: 103509109

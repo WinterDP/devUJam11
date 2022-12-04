@@ -15,34 +15,34 @@ MonoBehaviour:
   table:
   - Level: 0
     Step: 1
-    StickersNeededToLVLUP: 15
+    StickersNeededToLVLUP: 300
   - Level: 1
     Step: 1
-    StickersNeededToLVLUP: 17
+    StickersNeededToLVLUP: 344
   - Level: 2
     Step: 1
-    StickersNeededToLVLUP: 19
+    StickersNeededToLVLUP: 395
   - Level: 3
     Step: 1
-    StickersNeededToLVLUP: 22
+    StickersNeededToLVLUP: 454
   - Level: 4
     Step: 1
-    StickersNeededToLVLUP: 26
+    StickersNeededToLVLUP: 522
   - Level: 5
     Step: 1
-    StickersNeededToLVLUP: 29
+    StickersNeededToLVLUP: 599
   - Level: 6
     Step: 2
-    StickersNeededToLVLUP: 34
+    StickersNeededToLVLUP: 688
   - Level: 7
     Step: 2
-    StickersNeededToLVLUP: 39
+    StickersNeededToLVLUP: 790
   - Level: 8
     Step: 3
-    StickersNeededToLVLUP: 45
+    StickersNeededToLVLUP: 908
   - Level: 9
     Step: 3
-    StickersNeededToLVLUP: 52
+    StickersNeededToLVLUP: 1043
   - Level: 10
     Step: 3
-    StickersNeededToLVLUP: 59
+    StickersNeededToLVLUP: 1198

@@ -2509,7 +2509,7 @@ MonoBehaviour:
   _maxLVL: 10
   _generatorStep: 0
   _stickersNeededToLVLUp: 0
-  _upgradeData: {fileID: 11400000, guid: 308986bc79c20c6449847a6cc449f7d1, type: 2}
+  _upgradeData: {fileID: 11400000, guid: 4508469952b273442914628ca7d6764f, type: 2}
 --- !u!1 &506940996
 GameObject:
   m_ObjectHideFlags: 0
@@ -4682,7 +4682,7 @@ MonoBehaviour:
   _maxLVL: 10
   _generatorStep: 0
   _stickersNeededToLVLUp: 0
-  _upgradeData: {fileID: 11400000, guid: 308986bc79c20c6449847a6cc449f7d1, type: 2}
+  _upgradeData: {fileID: 11400000, guid: 1a4314ff992b1634e9cca158c3d9536d, type: 2}
 --- !u!1 &783153051
 GameObject:
   m_ObjectHideFlags: 0
@@ -7017,7 +7017,7 @@ MonoBehaviour:
   _maxLVL: 10
   _generatorStep: 0
   _stickersNeededToLVLUp: 0
-  _upgradeData: {fileID: 11400000, guid: 308986bc79c20c6449847a6cc449f7d1, type: 2}
+  _upgradeData: {fileID: 11400000, guid: 6b59d2e55bc0b824da64697eb8dbbdde, type: 2}
 --- !u!1 &1054482798
 GameObject:
   m_ObjectHideFlags: 0
@@ -10554,7 +10554,7 @@ MonoBehaviour:
   _maxLVL: 10
   _generatorStep: 0
   _stickersNeededToLVLUp: 0
-  _upgradeData: {fileID: 11400000, guid: 308986bc79c20c6449847a6cc449f7d1, type: 2}
+  _upgradeData: {fileID: 11400000, guid: 73a67a1bec1cff445b7958148306a3ce, type: 2}
 --- !u!1 &1535580825
 GameObject:
   m_ObjectHideFlags: 0
@@ -13222,7 +13222,7 @@ MonoBehaviour:
   _maxLVL: 10
   _generatorStep: 0
   _stickersNeededToLVLUp: 0
-  _upgradeData: {fileID: 11400000, guid: 308986bc79c20c6449847a6cc449f7d1, type: 2}
+  _upgradeData: {fileID: 11400000, guid: 104aede55d9aab542ac8b4dcf7d1472d, type: 2}
 --- !u!1 &1848042324
 GameObject:
   m_ObjectHideFlags: 0
@@ -13321,7 +13321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _upgradeLVL: 0
-  _maxLVL: 50
+  _maxLVL: 100
   _clickerStep: 1
   _stickersNeededToLVLUp: 0
   _upgradeData: {fileID: 11400000, guid: 0aa5ef70b0607d24894f508bb92ff55e, type: 2}
@@ -14864,7 +14864,7 @@ MonoBehaviour:
   _maxLVL: 10
   _generatorStep: 0
   _stickersNeededToLVLUp: 0
-  _upgradeData: {fileID: 11400000, guid: 308986bc79c20c6449847a6cc449f7d1, type: 2}
+  _upgradeData: {fileID: 11400000, guid: d76313a820e00c0479b2e10262d20bce, type: 2}
 --- !u!1 &1974761365
 GameObject:
   m_ObjectHideFlags: 0
