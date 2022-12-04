@@ -5,10 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class ClickerLVLUp
 { 
-    [Header ("Variáveis referentes ao upgrade 1")]
-    public int Level;
-    public int ClickerStep;
-    public long StickersNeededToLVLUP;
+
 
     public ClickerLVLUp(int Level, int ClickerStep , long StickersNeededToLVLUP)
     {
@@ -16,4 +13,9 @@ public class ClickerLVLUp
         this.ClickerStep = ClickerStep;
         this.StickersNeededToLVLUP = StickersNeededToLVLUP;
     }
+
+    [Header ("Variáveis referentes ao upgrade 1")]
+    public int Level;
+    public int ClickerStep;
+    public long StickersNeededToLVLUP;
 }
