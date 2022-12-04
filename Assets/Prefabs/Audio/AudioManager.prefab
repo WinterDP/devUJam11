@@ -77,7 +77,37 @@ MonoBehaviour:
     loop: 0
   - audioSource: {fileID: 0}
     name: Culto_Upgrade
-    clip: {fileID: 8300000, guid: 57a0908f9470786468b4b4501a5b7baf, type: 3}
+    clip: {fileID: 8300000, guid: dc4609ee6f06b774ba56c39a63244be7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: Clicker_Upgrade
+    clip: {fileID: 8300000, guid: 1633a24f0daf3f446a1046311a300044, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: Banca_Upgrade
+    clip: {fileID: 8300000, guid: 33c54dde672819647ac6bbc484ae0ed4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: Grafica_Upgrade
+    clip: {fileID: 8300000, guid: b8f5916086a810249ae421f5b7d35d07, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: CasaMoeda_Upgrade
+    clip: {fileID: 8300000, guid: 08c1027950505e743a0968d5b26b9b14, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: FIFA_Upgrade
+    clip: {fileID: 8300000, guid: 3b2feec0d98727b4a81938d941edb9d2, type: 3}
     volume: 1
     pitch: 1
     loop: 0
