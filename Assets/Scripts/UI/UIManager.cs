@@ -21,7 +21,9 @@ public class UIManager : MonoBehaviour
         [Header ("Variaveis relacionadas a UI do upgrade do clicker")]
         //armazena o valor da quantidade de figurinhas que será mostrado na tela
         [SerializeField] private TextMeshProUGUI _upgradeLVLText;
+        [SerializeField] private TextMeshProUGUI _upgradePriceText;
         [SerializeField] private GameObject _upgradeButton;
+
     #endregion
 
     #region Generator Variables
@@ -53,38 +55,64 @@ public class UIManager : MonoBehaviour
     
     #region Clicker Upgrade Methods
         public void CanLVLUp(bool state){
-            _upgradeButton.SetActive(state);
+            this._upgradeButton.SetActive(state);
         }
 
         public void UpdateLVLText(int newLvl){
-            this._upgradeLVLText. text = "NV:" + newLvl;
+            this._upgradeLVLText.SetText("NV:" + newLvl);
         }
+
+        public void UpdatePriceText(long newPrice){
+            this._upgradePriceText.SetText("Preço:\n" + newPrice);
+        }
+
+        public void SetPriceText(bool state){
+            this._upgradePriceText.enabled = state;
+        }
+
     #endregion
 
     #region Generator Methods
         #region Generator Whithdraw Methods
             public void CanWithdrawGenerator(bool state, int index){
-                this._generatorList[index]._withdrawStickerButton.SetActive(state);
+                this._generatorList[index].WithdrawStickerButton.SetActive(state);
             }
 
             public void UpdateGeneratorWithdrawSlider(float newCurrentStickers, int index){
-                this._generatorList[index]._currentStickersSlider.value = newCurrentStickers;
+                this._generatorList[index].CurrentStickersSlider.value = newCurrentStickers;
             }
         #endregion
 
         #region Generator upgrade Methods
             public void CanUpgradeGenerator(bool state, int index){
-                this._generatorList[index]._buyUpgradeButton.SetActive(state);
+                this._generatorList[index].BuyUpgradeButton.SetActive(state);
             }
 
             public void UpdateGeneratorLVLText(int newLvl, int index){
-                this._generatorList[index]._generatorLVLText.text = "NV:" + newLvl;
+                this._generatorList[index].GeneratorLVLText.SetText("NV:" + newLvl);
             }
+
+            public void UpdateGeneratorPriceText(long newPrice, int index){
+                this._generatorList[index].GeneratorPriceText.SetText("Preço:\n" + newPrice);
+            }
+
+            public void SetGeneratorPriceText(bool state, int index){
+                this._generatorList[index].GeneratorPriceText.enabled = state;
+            }
+
         #endregion
 
         #region Generator Manager Methods
             public void CanBuyManagerGenerator(bool state, int index){
-                this._generatorList[index]._buyManagerButton.SetActive(state);
+                this._generatorList[index].BuyManagerButton.SetActive(state);
+            }
+
+            public void UpdateManagerPriceText(long newPrice, int index){
+                this._generatorList[index].ManagerPriceText.SetText("Preço:\n" + newPrice);
+            }
+            
+            public void SetManagerPriceText(bool state, int index){
+                this._generatorList[index].ManagerPriceText.enabled = state;
             }
 
         #endregion  

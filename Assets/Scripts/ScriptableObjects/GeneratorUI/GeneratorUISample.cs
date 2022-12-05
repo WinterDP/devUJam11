@@ -9,9 +9,17 @@ using TMPro;
 [System.Serializable]
 public class GeneratorUISample
 {
-    public GameObject _buyManagerButton;
-    public Slider _currentStickersSlider;
-    public GameObject _withdrawStickerButton;
-    public GameObject _buyUpgradeButton;
-    public TextMeshProUGUI _generatorLVLText;
+    [Header("Manager")]
+    public GameObject BuyManagerButton;
+    public TextMeshProUGUI ManagerPriceText;
+
+
+    [Header("Withdraw")]
+    public Slider CurrentStickersSlider;
+    public GameObject WithdrawStickerButton;
+
+    [Header("Upgrade")]
+    public GameObject BuyUpgradeButton;
+    public TextMeshProUGUI GeneratorLVLText;
+    public TextMeshProUGUI GeneratorPriceText;
 }

@@ -19,14 +19,16 @@ public class MainClicker : MonoBehaviour
        //Recebendo as variaveis da tabela de lvl up do upgrade
         this._upgradeLVL = _upgradeData.table[0].Level;
         this._clickerStep = _upgradeData.table[0].Step;
-        this._stickersNeededToLVLUp = _upgradeData.table[0].StickersNeededToLVLUP; 
-
+        this._stickersNeededToLVLUp = _upgradeData.table[0].StickersNeededToLVLUP;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckIfCanLVLUp();
+        UIManager.instance.UpdateLVLText(_upgradeLVL);
+        UIManager.instance.UpdatePriceText(_stickersNeededToLVLUp);
     }
 
     #region Clicker main methods
@@ -39,11 +41,17 @@ public class MainClicker : MonoBehaviour
     #region upgrade methods
 
         public void CheckIfCanLVLUp(){
-            if(PlayerData.instance.GetStickersAmount() >= _stickersNeededToLVLUp && (_upgradeLVL < _maxLVL)){
-                UIManager.instance.CanLVLUp(true);
+            if (_upgradeLVL < _maxLVL)
+            {
+                if(PlayerData.instance.GetStickersAmount() >= _stickersNeededToLVLUp){
+                    UIManager.instance.CanLVLUp(true);
+                }else{
+                    UIManager.instance.CanLVLUp(false);
+                }
             }else{
-                UIManager.instance.CanLVLUp(false);
+                UIManager.instance.SetPriceText(false);
             }
+            
         }
 
 
@@ -54,6 +62,7 @@ public class MainClicker : MonoBehaviour
                 this._clickerStep = _upgradeData.table[_upgradeLVL].Step;
                 this._stickersNeededToLVLUp = _upgradeData.table[_upgradeLVL].StickersNeededToLVLUP;
                 UIManager.instance.UpdateLVLText(_upgradeLVL);
+                UIManager.instance.UpdatePriceText(_stickersNeededToLVLUp);
                 UIManager.instance.CanLVLUp(false);
             }
         }

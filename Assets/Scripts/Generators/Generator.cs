@@ -41,12 +41,17 @@ public class Generator : MonoBehaviour
         this._generatorStep = _upgradeData.table[0].Step;
         this._stickersNeededToLVLUp = _upgradeData.table[0].StickersNeededToLVLUP;
         this._managerCost = _upgradeData.table[4].StickersNeededToLVLUP;
+
+        
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
+        UIManager.instance.UpdateGeneratorLVLText( _upgradeLVL, _generatorOrder);
+        UIManager.instance.UpdateManagerPriceText( _managerCost, _generatorOrder);
+        UIManager.instance.UpdateGeneratorPriceText( _stickersNeededToLVLUp, _generatorOrder);
         this._maxStickersAmount = this._stickerStepMultiplier*this._generatorStep;
     }
 
@@ -105,11 +110,17 @@ public class Generator : MonoBehaviour
     #region upgrade methods
 
         public void CheckIfCanLVLUp(){
-            if((PlayerData.instance.GetStickersAmount() >= this._stickersNeededToLVLUp) && (this._upgradeLVL < this._maxLVL)){
-                UIManager.instance.CanUpgradeGenerator(true, _generatorOrder);
+            if (this._upgradeLVL < this._maxLVL)
+            {
+                if(PlayerData.instance.GetStickersAmount() >= this._stickersNeededToLVLUp){
+                    UIManager.instance.CanUpgradeGenerator(true, _generatorOrder);
+                }else{
+                    UIManager.instance.CanUpgradeGenerator(false, _generatorOrder);
+                }
             }else{
-                UIManager.instance.CanUpgradeGenerator(false, _generatorOrder);
+                UIManager.instance.SetGeneratorPriceText(false, _generatorOrder);
             }
+            
         }
 
         public void LevelUp(){
@@ -119,6 +130,7 @@ public class Generator : MonoBehaviour
                 this._generatorStep = _upgradeData.table[_upgradeLVL].Step;
                 this._stickersNeededToLVLUp = _upgradeData.table[_upgradeLVL].StickersNeededToLVLUP;
                 UIManager.instance.UpdateGeneratorLVLText(_upgradeLVL, _generatorOrder);
+                UIManager.instance.UpdateGeneratorPriceText( _stickersNeededToLVLUp, _generatorOrder);
                 UIManager.instance.CanUpgradeGenerator(false, _generatorOrder);
             }
         }
@@ -139,6 +151,7 @@ public class Generator : MonoBehaviour
                 PlayerData.instance.AddStickersToAmount(-(this._managerCost));
                 _hasManager = true;
                 UIManager.instance.CanBuyManagerGenerator(false, _generatorOrder);
+                UIManager.instance.SetManagerPriceText(false, _generatorOrder);
             }
         }
     #endregion
