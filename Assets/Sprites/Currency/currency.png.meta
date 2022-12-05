@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d942c0dff6253e0468d5e9ff4cb39f9d
+guid: 7e566084b19a20b43827ce0d7da7fb6d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fifa-generator-sprite_0
+      name: currency_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 580
-        height: 390
+        x: 210
+        y: 360
+        width: 1260
+        height: 1090
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66c9d73f7981c1479951658942eb6e8
-      internalID: 791821715
+      spriteID: 220af58ab0dad364abfcbd97247f2092
+      internalID: -1928250407
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fifa-generator-sprite_0: 791821715
+      currency_0: -1928250407
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
