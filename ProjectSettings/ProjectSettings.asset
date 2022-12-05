@@ -12,9 +12,9 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: devUJam11
-  defaultCursor: {fileID: 2800000, guid: 11d58e12cbb068946b08d6eed5e248dd, type: 3}
+  companyName: devU
+  productName: World Cup Sticker Mania
+  defaultCursor: {fileID: 2800000, guid: 5fb06bda1db81414285282b5b8e94e78, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1

@@ -62,8 +62,6 @@ public class MenuController : MonoBehaviour
             slider.value = mainVolume;
             slider.onValueChanged.AddListener(delegate { SetMasterVolume(); }); 
         }
-
-        Cursor.visible = true;
         
     }
 
