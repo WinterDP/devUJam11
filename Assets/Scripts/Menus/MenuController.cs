@@ -17,7 +17,6 @@ public class MenuController : MonoBehaviour
     public void PlayGame()
     {
         
-        AudioManager.instance.StopSound("Menu");
         if(PlayerData.instance.IsPaused)
             PlayerData.instance.IsPaused = !PlayerData.instance.IsPaused;
         
