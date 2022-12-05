@@ -111,3 +111,15 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
+  - audioSource: {fileID: 0}
+    name: Troca_Upgrade
+    clip: {fileID: 8300000, guid: 691cd3d96fd690746856de38d72d82fd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - audioSource: {fileID: 0}
+    name: Manager_Buy
+    clip: {fileID: 8300000, guid: be0e66e2d31426d499b3c849fabe0241, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
