@@ -54,7 +54,8 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.instance.PlaySound("Main_Music");
+        if(!(AudioManager.instance.IsPlaying("Main_Music")))
+            AudioManager.instance.PlaySound("Main_Music");
         
         AudioListener.volume = mainVolume;
         if (slider != null){
