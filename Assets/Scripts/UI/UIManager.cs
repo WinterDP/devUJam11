@@ -16,6 +16,12 @@ public class UIManager : MonoBehaviour
         [SerializeField] private TextMeshProUGUI _stickerAmountText;
     #endregion
 
+    #region Name
+        [Header ("Player Title")]
+
+        [SerializeField] private TextMeshProUGUI _playerTitleText;
+    #endregion
+
 
     #region Clicker Upgrade Variables
         [Header ("Variaveis relacionadas a UI do upgrade do clicker")]
@@ -50,6 +56,12 @@ public class UIManager : MonoBehaviour
         public void UpdateStickerAmount(long StickerAmount){
             string aux =  StickerAmount.ToString();
             this._stickerAmountText.text = aux;
+        }
+    #endregion
+
+    #region player title
+        public void UpdatePlayerTitle(string newTitle){
+            this._playerTitleText.SetText(newTitle);
         }
     #endregion
     

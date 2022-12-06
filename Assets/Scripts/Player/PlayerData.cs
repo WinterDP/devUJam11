@@ -8,6 +8,10 @@ public class PlayerData : MonoBehaviour
         private long _stickerAmount;
     #endregion
 
+    #region Player Title variables
+        private string _playerTitle;
+    #endregion
+
     #region Game manager variables
         [SerializeField] private GameObject _pauseMenu;
         [SerializeField] private GameObject _game;
@@ -61,15 +65,17 @@ public class PlayerData : MonoBehaviour
     #region game manager methods
 
         public void Pause(){
-            if(!IsPaused){
-                _pauseMenu.SetActive(true);
-                _game.SetActive(false);
-            }else{
-                _pauseMenu.SetActive(false);
-                _game.SetActive(true);
-            }
             IsPaused = !IsPaused;
         }
 
+    #endregion
+
+    #region Player Title methods
+        public string GetPlayerTitle() => this._playerTitle;
+
+        public void SetPlayerTitle(string NewTitle){
+            this._playerTitle = NewTitle;
+            UIManager.instance.UpdatePlayerTitle(this._playerTitle);
+        }
     #endregion
 }

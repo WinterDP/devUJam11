@@ -9,6 +9,9 @@ public class Generator : MonoBehaviour
     [Header(" ordem do gerador ")]
     [SerializeField] private int _generatorOrder;
 
+    [Header(" Titulo que o gerador da ")]
+    [SerializeField] private string _generatorTitle;
+
     [Header(" Variaveis do Manager do gerador ")]
     [SerializeField] private bool _hasManager;
     [SerializeField] private long _managerCost;
@@ -66,7 +69,8 @@ public class Generator : MonoBehaviour
         _cooldownElapsed += Time.fixedDeltaTime;
         if(_cooldownElapsed >= _cooldownTime){
             LoadStickers();
-            _cooldownElapsed = 0f;            }
+            _cooldownElapsed = 0f;            
+        }
     }
 
     #region Withdraw Stickers methods
@@ -125,6 +129,10 @@ public class Generator : MonoBehaviour
 
         public void LevelUp(){
             if(PlayerData.instance.GetStickersAmount() >= _stickersNeededToLVLUp){
+                if (_upgradeLVL == 0)
+                {
+                    PlayerData.instance.SetPlayerTitle(_generatorTitle);
+                }
                 PlayerData.instance.AddStickersToAmount(-(this._stickersNeededToLVLUp));
                 this._upgradeLVL ++;
                 this._generatorStep = _upgradeData.table[_upgradeLVL].Step;
